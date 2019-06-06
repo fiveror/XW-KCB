@@ -1,0 +1,245 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+    <meta charset="utf-8"/>
+	<title>课程表</title>
+        <style type="text/css">
+            table{
+                border: 5px solid black;
+                border-collapse: collapse;
+                text-align: center;
+            }
+            tr,th,td{
+                width: 150px;
+                height: 60px;
+                border: 3px solid black;
+            }
+            a:hover {color: red}
+            b:hover {color: yellow}
+            c:hover {color: green}
+            .pointer{cursor: pointer;}
+        </style>
+    </head>
+    <body>
+        <table  align="center">
+            <caption><h1><a class="pointer">课程表</a></h1></caption>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th><b class="pointer">星期一</a></th>
+                    <th><b class="pointer">星期二</a></th>
+                    <th><b class="pointer">星期三</a></th>
+                    <th><b class="pointer">星期四</a></th>
+                    <th><b class="pointer">星期五</a></th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="4"><c class="pointer">上午</c></th>
+                    <td class="pointer" onmousedown="mDown11(this)" onmouseup="mUp11(this)">web应用开发技术</td>
+                    <td class="pointer" onmousedown="mDown12(this)" onmouseup="mUp12(this)">大学英语四级</td>
+                    <td class="pointer" onmousedown="mDown13(this)" onmouseup="mUp13(this)">管理信息系统</td>
+                    <td class="pointer" onmousedown="mDown14(this)" onmouseup="mUp14(this)">数据库原理及应用</td>
+                    <td class="pointer" onmousedown="mDown15(this)" onmouseup="mUp15(this)">大学英语四级</td>
+                </tr>
+                <tr class="pointer">
+                    <td onmousedown="mDown11(this)" onmouseup="mUp11(this)">web应用开发技术</td>
+                    <td onmousedown="mDown12(this)" onmouseup="mUp12(this)">大学英语四级</td>
+                    <td onmousedown="mDown13(this)" onmouseup="mUp13(this)">管理信息系统</td>
+                    <td onmousedown="mDown14(this)" onmouseup="mUp14(this)">数据库原理及应用</td>
+                    <td onmousedown="mDown15(this)" onmouseup="mUp15(this)">大学英语四级</td>
+                </tr>
+                <tr class="pointer">
+                    <td onmousedown="mDown21(this)" onmouseup="mUp21(this)">毛泽东思想与中国特色社会主义理论体系概论</td>
+                    <td onmousedown="mDown22(this)" onmouseup="mUp22(this)">管理科学基础</td>
+                    <td onmousedown="mDown23(this)" onmouseup="mUp23(this)">毛泽东思想与中国特色社会主义理论体系概论</td>
+                    <td onmousedown="mDown24(this)" onmouseup="mUp24(this)">管理科学基础</td>
+                    <td onmousedown="mDown25(this)" onmouseup="mUp25(this)">运营管理</td>
+                </tr>
+                <tr class="pointer">
+                    <td onmousedown="mDown21(this)" onmouseup="mUp21(this)">毛泽东思想与中国特色社会主义理论体系概论</td>
+                    <td onmousedown="mDown22(this)" onmouseup="mUp22(this)">管理科学基础</td>
+                    <td onmousedown="mDown23(this)" onmouseup="mUp23(this)">毛泽东思想与中国特色社会主义理论体系概论</td>
+                    <td onmousedown="mDown24(this)" onmouseup="mUp24(this)">管理科学基础</td>
+                    <td onmousedown="mDown25(this)" onmouseup="mUp25(this)">运营管理</td>
+                </tr>
+                <tr>
+                    <th rowspan="4"><c class="pointer">下午</c></th>
+                    <td class="pointer" onmousedown="mDown31(this)" onmouseup="mUp31(this)">管理信息系统</td>
+                    <td class="pointer" onmousedown="mDown32(this)" onmouseup="mUp32(this)">形势与政策2</td>
+                    <td class="pointer" onmousedown="mDown33(this)" onmouseup="mUp33(this)">会计学</td>
+                    <td class="pointer" onmousedown="mDown34(this)" onmouseup="mUp34(this)">体育</td>
+                    <td class="pointer" onmousedown="mDown35(this)" onmouseup="mUp35(this)">毛泽东思想与中国特色社会主义理论体系概论</td>
+                </tr>
+                <tr class="pointer">
+                    <td class="pointer" onmousedown="mDown31(this)" onmouseup="mUp31(this)">管理信息系统</td>
+                    <td class="pointer" onmousedown="mDown32(this)" onmouseup="mUp32(this)">形势与政策2</td>
+                    <td class="pointer" onmousedown="mDown33(this)" onmouseup="mUp33(this)">会计学</td>
+                    <td class="pointer" onmousedown="mDown34(this)" onmouseup="mUp34(this)">体育</td>
+                    <td class="pointer" onmousedown="mDown35(this)" onmouseup="mUp35(this)">毛泽东思想与中国特色社会主义理论体系概论</td>
+                </tr>
+                <tr class="pointer">
+                    <td onmousedown="mDown41(this)" onmouseup="mUp41(this)">电子商务</td>
+                    <td onmousedown="mDown42(this)" onmouseup="mUp42(this)">数据库原理及应用</td>
+                    <td></td>
+                    <td onmousedown="mDown44(this)" onmouseup="mUp44(this)">会计学</td>
+                    <td></td>
+                </tr>
+                <tr class="pointer">
+                    <td onmousedown="mDown41(this)" onmouseup="mUp41(this)">电子商务</td>
+                    <td onmousedown="mDown42(this)" onmouseup="mUp42(this)">数据库原理及应用</td>
+                    <td></td>
+                    <td onmousedown="mDown44(this)" onmouseup="mUp44(this)">会计学</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <script>
+            function mDown11(obj) {
+            obj.style.backgroundColor="orange";
+            obj.innerHTML = "一公教C411<br/>老师：吕成功<br/>1-15周上";
+            }
+            function mUp11(obj) {
+            obj.style.backgroundColor="transparent";
+            obj.innerHTML="web应用开发技术";
+            }            
+            function mDown12(obj) {
+            obj.style.backgroundColor="purple";
+            obj.innerHTML = "一公教C221<br/>老师：张蔚<br/>1-17周上";
+            }
+            function mUp12(obj) {
+            obj.style.backgroundColor="transparent";
+            obj.innerHTML="大学英语四级";
+            }            
+            function mDown13(obj) {
+            obj.style.backgroundColor="gray";
+            obj.innerHTML = "一公教C105<br/>老师：刘烨<br/>1-15周上";
+            }
+            function mUp13(obj) {
+            obj.style.backgroundColor="transparent";
+            obj.innerHTML="管理信息系统";
+            }            
+            function mDown14(obj) {
+            obj.style.backgroundColor="blue";
+            obj.innerHTML = "一公教B405<br/>老师：吴君<br/>1-15周上";
+            }
+            function mUp14(obj) {
+            obj.style.backgroundColor="transparent";
+            obj.innerHTML="数据库原理及应用";
+            }
+            function mDown15(obj) {
+            obj.style.backgroundColor="purple";
+            obj.innerHTML = "外语学院楼219<br/>老师：张蔚<br/>1-17周上";
+            }
+            function mUp15(obj) {
+            obj.style.backgroundColor="transparent";
+            obj.innerHTML="大学英语四级";
+            }
+            function mDown21(obj) {
+            obj.style.backgroundColor="cyan";
+            obj.innerHTML = "一公教A120<br/>老师：顾洪英<br/>1-16周上";
+            }
+            function mUp21(obj) {
+            obj.style.backgroundColor="transparent";
+            obj.innerHTML="毛泽东思想与中国特色社会主义理论体系概论";
+            }            
+            function mDown22(obj) {
+            obj.style.backgroundColor="orangered";
+            obj.innerHTML = "一公教C411<br/>老师：赵方方<br/>3-17周上";
+            }
+            function mUp22(obj) {
+            obj.style.backgroundColor="transparent";
+            obj.innerHTML="管理科学基础";
+            }            
+            function mDown23(obj) {
+            obj.style.backgroundColor="cyan";
+            obj.innerHTML = "一公教A120<br/>老师：顾洪英<br/>1-16周上";
+            }
+            function mUp23(obj) {
+            obj.style.backgroundColor="transparent";
+            obj.innerHTML="毛泽东思想与中国特色社会主义理论体系概论";
+            }            
+            function mDown24(obj) {
+            obj.style.backgroundColor="orangered";
+            obj.innerHTML = "一公教C411<br/>老师：赵方方<br/>3-17周上";
+            }
+            function mUp24(obj) {
+            obj.style.backgroundColor="transparent";
+            obj.innerHTML="管理科学基础";
+            }
+            function mDown25(obj) {
+            obj.style.backgroundColor="greenyellow";
+            obj.innerHTML = "一公教B405<br/>老师：刘亮 邓华<br/>1-15周上";
+            }
+            function mUp25(obj) {
+            obj.style.backgroundColor="transparent";
+            obj.innerHTML="运营管理";
+            }
+            function mDown31(obj) {
+            obj.style.backgroundColor="gray";
+            obj.innerHTML = "一公教C105<br/>老师：刘烨<br/>1-15周上";
+            }
+            function mUp31(obj) {
+            obj.style.backgroundColor="transparent";
+            obj.innerHTML="管理信息系统";
+            }            
+            function mDown32(obj) {
+            obj.style.backgroundColor="wheat";
+            obj.innerHTML = "一公教C123<br/>老师：邵夏 李坤<br/>5-7周上";
+            }
+            function mUp32(obj) {
+            obj.style.backgroundColor="transparent";
+            obj.innerHTML="形势与政策2";
+            }            
+            function mDown33(obj) {
+            obj.style.backgroundColor="maroon";
+            obj.innerHTML = "一公教B101<br/>老师：刘晓晖 姜红<br/>1-17周上";
+            }
+            function mUp33(obj) {
+            obj.style.backgroundColor="transparent";
+            obj.innerHTML="会计学";
+            }            
+            function mDown34(obj) {
+            obj.style.backgroundColor="teal";
+            obj.innerHTML = "体育馆<br/>老师：陈露<br/>1-15周上";
+            }
+            function mUp34(obj) {
+            obj.style.backgroundColor="transparent";
+            obj.innerHTML="体育";
+            }
+            function mDown35(obj) {
+            obj.style.backgroundColor="cyan";
+            obj.innerHTML = "一公教A120<br/>老师：顾洪英<br/>1-16周上";
+            }
+            function mUp35(obj) {
+            obj.style.backgroundColor="transparent";
+            obj.innerHTML="毛泽东思想与中国特色社会主义理论体系概论";
+            }
+            function mDown41(obj) {
+            obj.style.backgroundColor="#D94A38";
+            obj.innerHTML = "一公教B303<br/>老师：张亮<br/>3-17周上";
+            }
+            function mUp41(obj) {
+            obj.style.backgroundColor="transparent";
+            obj.innerHTML="电子商务";
+            }            
+            function mDown42(obj) {
+            obj.style.backgroundColor="blue";
+            obj.innerHTML = "一公教C109<br/>老师：吴君<br/>1-17周上";
+            }
+            function mUp42(obj) {
+            obj.style.backgroundColor="transparent";
+            obj.innerHTML="数据库原理及应用";
+            }            
+            function mDown44(obj) {
+            obj.style.backgroundColor="maroon";
+            obj.innerHTML = "一公教B101<br/>老师：刘晓晖 姜红<br/>1-17周上";
+            }
+            function mUp44(obj) {
+            obj.style.backgroundColor="transparent";
+            obj.innerHTML="会计学";
+            }
+        </script>
+    </body>
+</html>
